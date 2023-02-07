@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global styles */
+@font-face {
+  font-family: "Comic";
+  font-weight: normal;
+  src: url(fonts/comici.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kanit";
+  font-weight: normal;
+  src: url(fonts/Kanit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Stint";
+  font-weight: normal;
+  src: url(fonts/StintUltraCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  src: url(fonts/Ubuntu-BoldItalic.ttf) format("truetype");
+}
+
+@layer base {
+  body {
+    @apply bg-primary;
+    @apply text-slate-50;
+    @apply p-5;
+    @apply font-kanit;
+  }
+}
+
+@layer components {
+  .tauri:hover {
+    filter: drop-shadow(0 0 2em #24c8db);
+  }
+
+  .yew:hover {
+    filter: drop-shadow(0 0 2em #ffc131);
+  }
+}
+
+/*
+ * FUENTES ONLINE PARA YEW. VER:
+ * https://fonts.google.com/
+ * https://www.onlinewebfonts.com/top
+ */
+
+/*
+ * COPIAR UN ASSETS A LA CARPETA DIST:
+ * https://trunkrs.dev/assets/#copy-file
+ */
